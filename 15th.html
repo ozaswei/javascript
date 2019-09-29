@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+<script type="text/javascript">
+function validator()
+{
+if(document.form1.thebox.checked)
+{
+alert("Yup its checked!!");
+}
+else
+{
+alert("No its not checked");
+}
+}
+</script>
+</head>
+<body>
+<form name="form1"> <!-- this is form[0] , it always starts with 0 initially-->
+Username::<input type="text" name="username"/><br/>
+Password::<input type="password" name="password"/><br/>
+<input type="checkbox" name="thebox"/><br/>
+<input type="submit" value="Submit" onClick="validator()"/><br/>
+</form>
+<script type="text/javascript">
+<!--var x=document.forms[0].length; It will give 3 as there are 3 elements in the form-->
+var x=document.form1.username.name;
+document.write(x);
+</script>
+</body>
+</html>

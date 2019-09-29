@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<script type="text/javascript">
+	function people(name,age)
+		{
+			this.name=name;
+			this.age=age;
+			this.YearsUntilRetire = YearsLeft; <!--Here no need () as its the way of saying to the browers that this method is the part of that object cause it doesn't have ()-->
+		}
+		
+	function YearsLeft()
+		{
+			var NumYears= 65-this.age;
+			return NumYears;
+		}
+		var shannon =new people("Shannon Ravens",21);
+		
+</script>
+</head>
+<body>
+<script type="text/javascript">
+document.write("The years left for "+shannon.name+" is:: "+shannon.YearsUntilRetire()); <!-- Here we need () as when u use it u need to add ()-->
+</script>
+</body>
+</html>

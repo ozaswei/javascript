@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<script type="text/javascript"> <!-- we create an object in the head-->
+	function person(name , age) <!-- this is a constructor funciton-->
+	{
+		this.name=name; <!-- it means the current object name is whatever name we pass in-->
+		this.age=age;
+	}
+	
+	var karren = new person("Karren",24); <!-- Creating a new instance-->
+	var kannon = new person("Kannon",23);
+	
+	
+	<!-- Object initializer -->	
+	bucky={name:"Bucky Roberts", age:24}; <!-- here bucky and dixya is the object-->
+	dixya={name:"Dikxya Lolwa", age:23};
+	
+</script>
+</head>	
+<body>
+<script type="text/javascript">
+
+var tuna="Hello there ?";
+document.write(tuna.length); <!--document is object, write is the method-->
+
+<!-- Printing out the object we made at the head-->
+document.write("<br/>"+"Name:: "+karren.name+" Age:: "+karren.age);
+document.write("<br/>"+"Name:: "+kannon.name+" Age:: "+kannon.age);
+
+
+<!-- Printing out the object made from the object initializer-->
+document.write("<br/>\"Hello, "+bucky.name+".You are "+bucky.age+" years old."+"\""+"says, "+dixya.name+" of age "+dixya.age+".<br/>");
+</script>
+</body>
+</html>

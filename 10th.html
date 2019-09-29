@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+<script type="text/javascript">
+var people = new Array("Kannon","Shannon","Karren"); <!--This is how you create an array, people is an array object. -->
+
+var things=new Array(3);
+things[0]="Jellybeans";
+things[1]="Boom box";
+things[2]="Lappy";
+
+var stuffs = new Array();
+stuffs[0] =" loves travelling.";
+stuffs[1] =" loves singing.";
+stuffs[2] =" loves cycling."
+
+<!-- Combining multiple arrays and storing it into one array-->
+var combined=people.concat(stuffs);
+
+<!-- Convert array to string -->
+var movies = new Array("Steins gate","Purge","Zombieland","Kimi no nawa");
+var string1 = movies.join(" - "); <!-- join is a method that converts arrays to string. If nothing is there at the parameters then it will seperate the arrays with ',' but if we write the paramters then whatever we wrote it will be its seperation  -->
+<!-- .pop(); removes the last element of the array
+movies.pop();
+
+
+<!-- Reverse , Push , Sort -->
+var bp=new Array("Head","Shoulders","Knees","Toes");
+
+
+</script>
+</head>
+<body>
+<script type="text/javascript">
+for(i=0;i<people.length;i++)
+{
+document.write(people[i]+" <br/>");
+}
+for(i=0;i<things.length;i++)
+{
+document.write(things[i]+" <br/>");
+}
+<!-- Combining Multiple Arrays -->
+for(i=0;i<people.length;i++)
+{
+for(j=0;j<things.length;j++)
+{
+document.write(people[i]+" likes "+things[j]+"<br/>");
+}
+}
+
+for(i=0;i<combined.length;i++)
+{
+document.write(combined[i]+" <br/>");
+}
+
+document.write(string1+"<br/>");
+for(i=0;i<movies.length;i++) <!-- here the last element of the array movies haas been removed -- >
+{
+document.write(movies[i]+" - ");
+}
+
+<!-- Reverse , Push , Sort -->
+document.write("<br/><br/>Initial value of the Array bp:: ");
+for(i=0;i<bp.length;i++)
+{
+document.write(bp[i]+" ");
+}
+document.write("<br/><br/>After reversing the value of the Array bp:: ");
+document.write(bp.reverse()); <!-- it will reverse the array-->
+
+document.write("<br/><br/>After pushing two values in the Array bp:: ");
+bp.push("Tongue","liver") <!-- this will add the element to the end of the array-->
+for(i=0;i<bp.length;i++)
+{
+document.write(bp[i]+" ");
+}
+
+document.write("<br/><br/>After sorting the values in the Array bp:: ");
+document.write(bp.sort()+" ");
+
+
+</script>
+</body>
+</html>

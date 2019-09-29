@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+</head>
+<body>
+<script type="text/javascript">
+function PrintTime()
+{
+var now=new Date(); <!-- Date() will grab the current date-->
+var hours=now.getHours();
+var mins=now.getMinutes();
+var seconds=now.getSeconds();
+document.write("Hours:: " + hours +" Minuttes:: " + mins + " Seconds:: " + seconds+"<br/>");
+document.clear();
+}
+setInterval("PrintTime()",1000);
+</script>
+</body>
+</html>
